@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">  
+    <title>Formulario Ing Web</title>
+</head>
+<body>
+    <form id="formulario" method="POST">
+        <ul>
+            <li>
+                <!--Nombre-->
+                <div class="formularioFila" id="idNombre">
+                    <label for="nombre" class="lblForm">1er nombre...</label>
+                    <div class="InputBox">
+                        <input type="string" class="inputForm" name="nombre" id="nombre" required>
+                    </div>
+                    <p class="msgError">Debes escribir el primer nombre</p>
+                </div>
+                <!--Apellido-->
+                <div class="formularioFila" id="idApellido">
+                    <label for="apellido" class="lblForm">1er apellido...</label>
+                    <div class="InputBox">
+                        <input type="string" class="inputForm" name="apellido" id="apellido" required>
+                    </div>
+                    <p class="msgError">Debes escribir el apellido</p>
+                </div>
+                <!--Rut-->
+                <div class="formularioFila" id="idRut">
+                    <label for="rut" class="lblForm">Rut...</label>
+                    <div class="InputBox">
+                        <input type="string" class="inputForm" name="rut" id="rut" required>
+                    </div>
+                    <p class="msgError">Debes escribir el RUT, puedes usar guión</p>
+                </div>
+                <!--Email-->
+                <div class="formularioFila" id="idEmail">
+                    <label for="email" class="lblForm">E-mail...</label>
+                    <div class="InputBox">
+                        <input type="email" class="inputForm" name="email" id="email" required>
+                    </div>
+                    <p class="msgError">Debes escribir el email, recuerda el arroba</p>
+                </div>
+                <!--Teléfono-->
+                <div class="formularioFila" id="idTelefono">
+                    <label for="teléfono" class="lblForm">N° Telefónico</label>
+                    <div class="InputBox">
+                        <input type="number" class="inputForm" name="telefono" id="telefono" required>
+                    </div>
+                    <p class="msgError">Debes escribir el Teléfono - No puedes usar carácteres</p>
+                </div>
+                <!--Lenguajes-->
+                <div class="formularioFila" id="idLenguajes">
+                    <label for="lenguajes" class="lblForm">Lenguajes</label>
+                    <div class="InputBox">
+                        <input type="checkbox" class="inputForm" name="Python" id="python"> Python <b style="color: gray; font-family: Calibri"></b> <br>
+                        <input type="checkbox" class="inputForm" name="Java" id="java"> Java<b style="color: gray; font-family: Calibri"></b> <br>
+                        <input type="checkbox" class="inputForm" name="TypeScript" id="ts"> TypeScript<b style="color: gray; font-family: Calibri"></b> <br>
+                        <input type="checkbox" class="inputForm" name="PHP" id="php"> PHP<b style="color: gray; font-family: Calibri"></b> <br>
+                        <input type="checkbox" class="inputForm" name="C#" id="csh"> C#<b style="color: gray; font-family: Calibri"></b> <br>
+                        <input type="checkbox" class="inputForm" name="C++" id="cplus"> C++<b style="color: gray; font-family: Calibri"></b> <br>
+                    </div>
+                </div>
+                <!--Nivel-->
+                <div class="formularioFila">
+                    <label for="nivel" class="lblForm">Cual es su nivel de programación?</label>
+                    <div class="InputBox">
+                        <input type="range" class="inputForm" name="nivel" id="nivel">
+                    </div>
+                </div>
+                <!--Experiencia--> 
+                <div class="formularioFila" id="idExperiencia">
+                    <label for="exp" class="inputForm">Cual es su nivel de experiencia laboral?</label>
+                    <div class="InputBox">
+                        <input type="radio" class="inputForm" name="Experiencia" id="exp1"><b style="color: gray;font-family: Calibri">1</b></input>
+                        <input type="radio" class="inputForm" name="Experiencia" id="exp2"><b style="color: gray;font-family: Calibri">2</b></input>
+                        <input type="radio" class="inputForm" name="Experiencia" id="exp3"><b style="color: gray;font-family: Calibri">3</b></input>
+                        <input type="radio" class="inputForm" name="Experiencia" id="exp4"><b style="color: gray;font-family: Calibri">4</b></input>
+                        <input type="radio" class="inputForm" name="Experiencia" id="exp5"><b style="color: gray;font-family: Calibri">5</b></input>
+                    </div>
+                    <p class="msgError"> Debes seleccionar tu nivel de experiencia</p>
+                </div> 
+                 <!--Descripción-->
+                <div class="formularioFila" id="idDescripcion">
+                    <label for="desc" class="inputForm"></label>
+                    <div class="InputBox">
+                        <textarea class="inputForm" name="Descripcion" id="desc"></textarea>
+                    </div>
+                </div>
+                <!--Enviar-->
+                <div class="formularioFila">
+                    <button type="submit" class="send">Enviar</button>
+                </div>
+                <!--Limpiar-->
+                <div class="formularioFila">
+                    <button type="button" class="clean" id="clean">Limpiar</button>
+                </div>
+                
+            </li>
+        </ul>
+    </form>
+    <script src="ts/validar.js" async defer></script>
+</body>
+</html>
